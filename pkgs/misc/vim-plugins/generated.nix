@@ -2686,6 +2686,18 @@ let
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects/";
   };
 
+  nvim-web-devicons = buildVimPluginFrom2Nix {
+    pname = "nvim-web-devicons";
+    version = "2020-09-06";
+    src = fetchFromGitHub {
+      owner = "kyazdani42";
+      repo = "nvim-web-devicons";
+      rev = "d9eda5881725aac31bcdee98c9eac94f07516a83";
+      sha256 = "0xkbprq4pdp0vj13hpcvskgczif5966jw4kyb14zbvg6fxa31hzw";
+    };
+    meta.homepage = "https://github.com/kyazdani42/nvim-web-devicons/";
+  };
+
   nvim-yarp = buildVimPluginFrom2Nix {
     pname = "nvim-yarp";
     version = "2020-04-08";
