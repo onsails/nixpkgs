@@ -5100,6 +5100,19 @@ let
     meta.homepage = "https://github.com/bitc/vim-hdevtools/";
   };
 
+  vim-hexokinase = buildVimPluginFrom2Nix {
+    pname = "vim-hexokinase";
+    version = "2020-08-25";
+    src = fetchFromGitHub {
+      owner = "RRethy";
+      repo = "vim-hexokinase";
+      rev = "8b1ff29c09e179ec4513c64f1ef0b23aacbe2343";
+      sha256 = "1z9iz5syvn67lg8s0dkrxzy89dkj74k8bjp56fxklzvfg4a4b336";
+      fetchSubmodules = true;
+    };
+    meta.homepage = "https://github.com/RRethy/vim-hexokinase/";
+  };
+
   vim-hier = buildVimPluginFrom2Nix {
     pname = "vim-hier";
     version = "2011-08-27";
