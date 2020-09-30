@@ -351,6 +351,18 @@ let
     meta.homepage = "https://github.com/chrisbra/CheckAttach/";
   };
 
+  ci_dark = buildVimPluginFrom2Nix {
+    pname = "ci_dark";
+    version = "2020-09-30";
+    src = fetchFromGitHub {
+      owner = "chuling";
+      repo = "ci_dark";
+      rev = "ab01742b13c1392e0115212eb0aa43878c18434f";
+      sha256 = "1x2p0jczbqk9lhpwgb85dp91dv07f24z9avzi35pqjb919j5dykh";
+    };
+    meta.homepage = "https://github.com/chuling/ci_dark/";
+  };
+
   clang_complete = buildVimPluginFrom2Nix {
     pname = "clang_complete";
     version = "2020-09-18";
