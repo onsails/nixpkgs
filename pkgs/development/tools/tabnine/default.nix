@@ -24,6 +24,7 @@ in stdenv.mkDerivation rec {
   dontUnpack = true;
 
   installPhase = ''
+    ls -l $src
     chmod +x $src
     mkdir -p $out/bin
     ln -s $src $out/bin/TabNine
