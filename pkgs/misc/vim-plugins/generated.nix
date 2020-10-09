@@ -6326,6 +6326,18 @@ let
     meta.homepage = "https://github.com/Vimjas/vim-python-pep8-indent/";
   };
 
+  vim-qf = buildVimPluginFrom2Nix {
+    pname = "vim-qf";
+    version = "2020-09-26";
+    src = fetchFromGitHub {
+      owner = "romainl";
+      repo = "vim-qf";
+      rev = "d5d7bb2e230b2098fdb2b28cfaa1b48a83d11a69";
+      sha256 = "1wq47497rpf14gbwzkr62qmi8gr03ami5i0wbzlya7nqijcknbn9";
+    };
+    meta.homepage = "https://github.com/romainl/vim-qf/";
+  };
+
   vim-qml = buildVimPluginFrom2Nix {
     pname = "vim-qml";
     version = "2020-11-03";
