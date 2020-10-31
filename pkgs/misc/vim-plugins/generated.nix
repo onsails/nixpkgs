@@ -2590,6 +2590,18 @@ let
     meta.homepage = "https://github.com/chrisbra/NrrwRgn/";
   };
 
+  nvcode-color-schemes-vim = buildVimPluginFrom2Nix {
+    pname = "nvcode-color-schemes-vim";
+    version = "2020-10-31";
+    src = fetchFromGitHub {
+      owner = "ChristianChiarulli";
+      repo = "nvcode-color-schemes.vim";
+      rev = "2c70154600f2a25f06a7da249049bf37ee59649d";
+      sha256 = "18cdpjkzk6313r0gvwffsdb30f3wczc87cf3cy5qj08sndji246d";
+    };
+    meta.homepage = "https://github.com/ChristianChiarulli/nvcode-color-schemes.vim/";
+  };
+
   nvim-cm-racer = buildVimPluginFrom2Nix {
     pname = "nvim-cm-racer";
     version = "2017-07-27";
