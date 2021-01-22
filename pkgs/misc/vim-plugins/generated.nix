@@ -1833,8 +1833,20 @@ let
     meta.homepage = "https://github.com/haya14busa/incsearch.vim/";
   };
 
-  indent-blankline-nvim = buildVimPluginFrom2Nix {
-    pname = "indent-blankline-nvim";
+  indent-blankline-nvim-lua = buildVimPluginFrom2Nix {
+    pname = "indent-blankline-nvim-lua";
+    version = "2021-01-22";
+    src = fetchFromGitHub {
+      owner = "lukas-reineke";
+      repo = "indent-blankline.nvim";
+      rev = "207e001be64b39b72f8661e4a723d5bab698b5cd";
+      sha256 = "0vnnfm319y3n0vvwbwls40fb6s73rqc8yyi31g0f0hdwd6ahsafm";
+    };
+    meta.homepage = "https://github.com/lukas-reineke/indent-blankline.nvim/";
+  };
+
+  indent-blankline-nvim-lua = buildVimPluginFrom2Nix {
+    pname = "indent-blankline-nvim-lua";
     version = "2021-01-22";
     src = fetchFromGitHub {
       owner = "lukas-reineke";
