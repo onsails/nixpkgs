@@ -3112,8 +3112,8 @@ let
     src = fetchFromGitHub {
       owner = "Th3Whit3Wolf";
       repo = "one-nvim";
-      rev = "3d8267f9ce9c5ce8add7390da9e757b0a22eaa8f";
-      sha256 = "03lm9c3rzd25csjz9impp1016pxisfqgcpf5cbl3gcg9cpr7jrbf";
+      rev = "1a91cd4347c03e0bc74a9a391572ee6d6a724dc7";
+      sha256 = "1dy8fpzfn4lvj64yy7cahvjdas3lj0cy16rnh562fc64pgbjz5ca";
     };
     meta.homepage = "https://github.com/Th3Whit3Wolf/one-nvim/";
   };
