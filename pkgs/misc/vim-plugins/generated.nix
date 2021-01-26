@@ -2988,12 +2988,12 @@ let
 
   nvim-treesitter = buildVimPluginFrom2Nix {
     pname = "nvim-treesitter";
-    version = "2021-01-25";
+    version = "2021-01-26";
     src = fetchFromGitHub {
       owner = "nvim-treesitter";
       repo = "nvim-treesitter";
-      rev = "76d4a2a0c4883ee9ed4f4f17773e067836f2153d";
-      sha256 = "00pwk2miq54di9yyal9x546c3r3rczlyn941rdphi6awsj2cnkyn";
+      rev = "db033f72396ba3b96b0988626a5bfc7800855363";
+      sha256 = "0sgzfwkzhsgmj1sh05akwx5qc2vpb0zh2cdfxarg243wfnvpq5yw";
     };
     meta.homepage = "https://github.com/nvim-treesitter/nvim-treesitter/";
   };
@@ -3112,8 +3112,8 @@ let
     src = fetchFromGitHub {
       owner = "Th3Whit3Wolf";
       repo = "one-nvim";
-      rev = "b1d27b0ed21847a90ada2739611cf4a55518a0b2";
-      sha256 = "1v52h6bdxq0lkpqqxv8ib7ai2lycay8nrz1c8yqp49ydg98xwbip";
+      rev = "3d8267f9ce9c5ce8add7390da9e757b0a22eaa8f";
+      sha256 = "03lm9c3rzd25csjz9impp1016pxisfqgcpf5cbl3gcg9cpr7jrbf";
     };
     meta.homepage = "https://github.com/Th3Whit3Wolf/one-nvim/";
   };
