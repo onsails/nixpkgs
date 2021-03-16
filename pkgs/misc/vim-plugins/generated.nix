@@ -2974,6 +2974,18 @@ let
     meta.homepage = "https://github.com/windwp/nvim-autopairs/";
   };
 
+  nvim-blame-line = buildVimPluginFrom2Nix {
+    pname = "nvim-blame-line";
+    version = "2020-12-26";
+    src = fetchFromGitHub {
+      owner = "tveskag";
+      repo = "nvim-blame-line";
+      rev = "52258a958eee02194da5a1e59db7a4d8903754be";
+      sha256 = "06vfdcx3014m1q37hciwc70qkhizcwpvks7y7wgrwjppvjk1dbz9";
+    };
+    meta.homepage = "https://github.com/tveskag/nvim-blame-line/";
+  };
+
   nvim-bqf = buildVimPluginFrom2Nix {
     pname = "nvim-bqf";
     version = "2021-03-16";
